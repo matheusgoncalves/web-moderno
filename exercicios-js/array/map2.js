@@ -10,6 +10,6 @@ const carrinho = [
 const jsonParaObjeto = objeto => JSON.parse(objeto);
 const apenasPrecos = objeto => objeto.preco;
 
-const resultado = carrinho.map(jsonParaObjeto).map(apenasPrecos);
+const resultado = carrinho.map(jsonParaObjeto).map(apenasPrecos); // Chama a função map duas vezes, uma para converter o JSON em objeto e outra para retornar apenas os preços
 
 console.log(resultado);
